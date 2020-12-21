@@ -1,0 +1,72 @@
+
+
+GET  http://localhost:4000/api/tasks
+
+
+############################################################################
+
+GET  http://localhost:4000/api/tasks?nombre=jueves
+
+
+
+########################################################################
+
+POST  http://localhost:4000/api/tasks
+Content-type: application/json
+
+
+{
+"apellido": "Martinez",
+"nombre":"cesar",
+"telefono": 2134713,
+"motivo": "Jueves",
+"informacion": "Primer usuario",
+"done": false,
+"valor": 12222,
+"direccion" : "   calle 49s",
+"available" : false,
+"estado" : "en camino",
+"asignado" : "Cesar",
+"emails" :"cesar677@hotmail.com"
+}
+
+#################
+
+GET  http://localhost:4000/api/tasks/5fde61e058c5f51b8c335d3b
+
+
+
+#################
+
+DELETE  http://localhost:4000/api/tasks/5fdeb9c76ac4b12880c5707c
+
+#################
+
+GET  http://localhost:4000/api/tasks/done
+
+
+#################
+
+
+
+PUT  http://localhost:4000/api/tasks/5fdeb4623d7c4b19e04e1cf9
+content-type: application/json
+
+
+{
+      "telefono": 3105595301,
+      "valor": 150000,
+      "available": true,
+      "done": false,
+      "email": "cesar677@hotmail.com",
+      "apellido": "Gomez C",
+      "nombre": "Adrina",
+      "informacion": "informacion",
+      "motivo": "motivo",
+      "estado": "estado",
+      "direccion": "direccion",
+      "asignado": "asignado"
+}
+#################
+
+
